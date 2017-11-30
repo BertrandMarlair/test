@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.message{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.form {
+  width: 20%;
+  margin: auto;
+}
+
+.form input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form button {
+  box-sizing: content-box;
+  width: 86px;
+  font-size: 17px;
+  height: 32px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.liste{
+  font-size: 20px;
+  color: #363636;
+}
+
+.buttonList {
+  box-sizing: content-box;
+  width: 150px;
+  height: 21px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid rgb(30,205,151);
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(30, 205, 151);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.buttonList:hover {
+  color: rgba(255,255,255,1);
+  background: rgb(30, 205, 151);
+}
+
+.buttonList:active {
+  border: 2px solid rgba(33,224,163,1);
+  background: rgba(33,224,163,1);
+  transition: none;
+}
+
+.buttonList:focus{
+  outline: none;
+}
+
+.buttonListDone {
+  box-sizing: content-box;
+  width: 150px;
+  height: 21px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid #ff623f;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ff623f;
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.buttonListDone:hover {
+  color: white;
+  background: #ff623f;
+}
+
+.buttonListDone:active {
+  border: 2px solid #ff623f;
+  background: #ff623f;
+  transition: none;
+}
+
+.buttonListDone:focus{
+  outline: none;
+}
+
+.buttonListForm {
+  box-sizing: content-box;
+  width: 150px;
+  height: 21px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid #15a0f0;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #15a0f0;
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.buttonListForm:hover {
+  color: white;
+  background: #15a0f0;
+}
+
+.buttonListForm:active {
+  border: 2px solid #15a0f0;
+  background: #15a0f0;
+  transition: none;
+}
+
+.buttonListForm:focus{
+  outline: none;
+}
+
+.todo{
+  height: 39px;
+  margin: 10px;
+  border-bottom: #24242475 1px solid;
+}
+
+.textTodo{
+  width: 50%;
+  float: left;
+}
+
+.buttonTodo{
+  width: 50%;
+  float: right;
+}
+
+.test{
+  float: left;
+  font-size: 25px;
+}
+
+.check{
+  float: left;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+ }
+
+input:checked + label {
+	background: rgba(33,224,163,1);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 30px;
+}
